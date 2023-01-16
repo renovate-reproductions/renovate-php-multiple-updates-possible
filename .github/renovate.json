@@ -3,7 +3,8 @@
   "extends": ["config:base", ":widenPeerDependencies", ":rebaseStalePrs", "group:phpstan"],
   "labels": [ "Dependencies 📦", "PHP 🐘"],
   "composerIgnorePlatformReqs": null,
-  "rangeStrategy": "bump",
+  "rangeStrategy": "widen",
+  "separateMultipleMajor": true,
   "enabledManagers": [
     "composer"
   ]
